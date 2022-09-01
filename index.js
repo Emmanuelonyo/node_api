@@ -4,6 +4,7 @@ const app = express();
 const tasks = require('./routers/tasks')
 const connectDB = require('./database/connect')
 require('dotenv').config()
+
 // Middleware 
 app.use(express.json())
 
