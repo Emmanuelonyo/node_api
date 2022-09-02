@@ -19,7 +19,7 @@ const showTasks = async () => {
       .map((task) => {
         const { completed, _id: taskID, name } = task
         return `<div class="single-task ${completed && 'task-completed'}">
-<h5><span><i class="far fa-check-circle"></i></span>${name}</h5>
+<h5><span><i class="fas fa-check"></i></span>${name}</h5>
 <div class="task-links">
 
 

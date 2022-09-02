@@ -7,20 +7,12 @@ require('dotenv').config()
 
 // Middleware 
 app.use(express.json())
+app.use(express.static('./public'))
 
 
 //routes
-app.get('/', (req, res) =>{    
-    res.send('welcome to the homepage')
-})
+
 app.use('/api/v1/tasks', tasks)
-
-//API ROUTES 
-app.get('/api/v1/tasks', (req, res) =>{
-
-})
-
-
 
 const port = 3000
 
